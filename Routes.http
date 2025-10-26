@@ -1,5 +1,5 @@
 ### Cadastrar Autor
-POST http://localhost:3000/authors
+POST http://localhost:3333/api/authors
 Content-Type: application/json
 
 {
@@ -10,10 +10,10 @@ Content-Type: application/json
 }
 
 ### Listar Autores
-GET http://localhost:3000/authors
+GET http://localhost:3333/api/authors
 
 ### Cadastrar Usuário
-POST http://localhost:3000/users
+POST http://localhost:3333/api/users
 Content-Type: application/json
 
 {
@@ -24,10 +24,10 @@ Content-Type: application/json
 }
 
 ### Listar Usuários
-GET http://localhost:3000/users
+GET http://localhost:3333/api/users
 
 ### Cadastrar Livro
-POST http://localhost:3000/books
+POST http://localhost:3333/api/books
 Content-Type: application/json
 
 {
@@ -38,10 +38,10 @@ Content-Type: application/json
 }
 
 ### Listar Livros
-GET http://localhost:3000/books
+GET http://localhost:3333/api/books
 
 ### Realizar Empréstimo
-POST http://localhost:3000/loans
+POST http://localhost:3333/api/loans
 Content-Type: application/json
 
 {
