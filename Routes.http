@@ -1,0 +1,50 @@
+### Cadastrar Autor
+POST http://localhost:3000/authors
+Content-Type: application/json
+
+{
+    "name": "João Silva",
+    "birthDate": "1980-05-15",
+    "sex": "Masculino",
+    "writingGenre": "Fiction"
+}
+
+### Listar Autores
+GET http://localhost:3000/authors
+
+### Cadastrar Usuário
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "Maria Souza",
+    "birthDate": "1990-10-20",
+    "sex": "Feminino",
+    "address": "Rua Exemplo, 123"
+}
+
+### Listar Usuários
+GET http://localhost:3000/users
+
+### Cadastrar Livro
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+    "title": "O Grande Livro",
+    "synopsis": "Uma aventura épica",
+    "year": 2020,
+    "author": "ID_DO_AUTOR"
+}
+
+### Listar Livros
+GET http://localhost:3000/books
+
+### Realizar Empréstimo
+POST http://localhost:3000/loans
+Content-Type: application/json
+
+{
+    "user": "Maria Souza",
+    "book": "ID_DO_LIVRO"
+}
