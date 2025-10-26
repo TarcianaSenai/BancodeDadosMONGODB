@@ -2,6 +2,12 @@ const fastify = require("fastify")({ logger: true });
 const connectDB = require("./src/Config/database.js");
 require("dotenv").config();
 
+// Rota raiz
+fastify.get("/", async (request, reply) => {
+  reply.send({ message: "Bem-vindo a API de Gerenciamento de Biblioteca!" });
+});
+
+// Registrar rotas com prefixo /api
 fastify.register(require("./src/Routes/authorRoutes.js"), {
   prefix: "/api/authors",
 });
@@ -15,6 +21,7 @@ fastify.register(require("./src/Routes/loanRoutes.js"), {
   prefix: "/api/loans",
 });
 
+// Iniciar servidor
 const start = async () => {
   await connectDB();
   try {
