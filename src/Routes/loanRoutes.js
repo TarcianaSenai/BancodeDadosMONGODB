@@ -10,7 +10,7 @@ module.exports = async (fastify, options) => {
         return reply.code(404).send({ error: "Livro não encontrado" });
       }
       if (!bookData.isAvailable && bookData.expectedReturnDate > new Date()) {
-        return reply.code(400).send({ error: "Livro já emprestado" });
+        return reply.code(400).send({ error: "Livro ja emprestado" }); // erro: sem acento
       }
 
       const loan = new Loan({
@@ -31,7 +31,7 @@ module.exports = async (fastify, options) => {
 
       reply.code(201).send(loan);
     } catch (error) {
-      reply.code(400).send({ error: "Erro ao realizar emprestimo" }); // erro: "emprestimo" sem acento
+      reply.code(400).send({ error: "Erro ao realizar emprestimo" }); // erro: sem acento
     }
   });
 };
