@@ -3,7 +3,7 @@ POST http://localhost:3333/api/authors
 Content-Type: application/json
 
 {
-    "name": "João Silva",
+    "name": "David Luca",
     "birthDate": "1980-05-15",
     "sex": "Masculino",
     "writingGenre": "Fiction"
@@ -17,10 +17,10 @@ POST http://localhost:3333/api/users
 Content-Type: application/json
 
 {
-    "name": "Maria Souza",
+    "name": "Caca Souza",
     "birthDate": "1990-10-20",
     "sex": "Feminino",
-    "address": "Rua Exemplo, 123"
+    "adress": "Rua Exemplo, 123"
 }
 
 ### Listar Usuários
@@ -34,7 +34,7 @@ Content-Type: application/json
     "title": "O Grande Livro",
     "synopsis": "Uma aventura épica",
     "year": 2020,
-    "author": "ID_DO_AUTOR"
+    "author": "68fec9d15cb4941194049044"
 }
 
 ### Listar Livros
@@ -46,5 +46,5 @@ Content-Type: application/json
 
 {
     "user": "Maria Souza",
-    "book": "ID_DO_LIVRO"
+    "book": "68fed00ad9e7aae0ffc5c03d"
 }

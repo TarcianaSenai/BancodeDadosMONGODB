@@ -6,7 +6,7 @@ async function createUser(request, reply) {
     await user.save();
     reply.code(201).send(user);
   } catch (error) {
-    reply.code(400).send({ error: "Erro ao cadastrar usuario" }); // erro: sem acento
+    reply.code(400).send({ error: "Erro ao cadastrar usuario" });
   }
 }
 
@@ -15,7 +15,7 @@ async function listUsers(request, reply) {
     const users = await User.find();
     reply.send(users);
   } catch (error) {
-    reply.code(500).send({ error: "Erro ao listar usuarios" }); // erro: sem acento
+    reply.code(500).send({ error: "Erro ao listar usuarios" });
   }
 }
 
